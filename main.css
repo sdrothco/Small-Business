@@ -1,0 +1,325 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*	End of CSS Reset */
+
+
+
+html, body {
+	height: 100%;
+}
+
+body {
+	font-family: Times, serif;
+	font-size: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	margin: .2em 0;
+}
+
+h1 { font-size: 2em; }
+h2 { font-size: 1.5em; }
+
+
+/* for the sticky footer */
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 0 -70px 0;
+}
+
+/* to keep the content tight on a wide viewport */
+.fixed-width {
+	max-width: 960px;
+	min-width: 760px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+/* header styling */
+header {
+	background-color: #7aadcf;
+	background: -webkit-linear-gradient(bottom, #7aadcf 0%,#3D7EA9 100%);
+	background: -moz-linear-gradient(bottom, #7aadcf 0%,#3D7EA9 100%);
+	background: -o-linear-gradient(bottom, #7aadcf 0%,#3D7EA9 100%);
+	background: -ms-linear-gradient(bottom, #7aadcf 0%,#3D7EA9 100%);
+	background: linear-gradient(bottom, #7aadcf 0%,#3D7EA9 100%);
+}
+.contact-info {
+	float: right;
+	/*color: #07518A;*/
+	/*color: #4b545f;*/
+	color: black;
+	margin: 1.5em;
+	text-shadow: #a4a4a4 2px 1px 1px;
+	font-style: italic; 
+}
+.logo {
+	height: 6.1em;
+	padding: .3em;
+}
+/* end header styling */
+
+
+
+/* style the nav bar */
+nav {
+	clear: both;
+	background: #efefef; 
+	background: -webkit-linear-gradient(top, #efefef 0%,#bbbbbb 100%);
+	background: -moz-linear-gradient(top, #efefef 0%,#bbbbbb 100%);
+	background: -o-linear-gradient(top, #efefef 0%,#bbbbbb 100%);
+	background: -ms-linear-gradient(top, #efefef 0%,#bbbbbb 100%);
+	background: linear-gradient(top, #efefef 0%,#bbbbbb 100%);
+
+	-webkit-box-shadow: 0 0 9px rgba(0,0,0,0.15);
+	box-shadow: 0 0 9px rgba(0,0,0,0.15);
+
+}
+
+/* hide the sub lists */
+nav ul ul {
+	display: none;
+}
+
+/* show the sub lists when you hover over parent */
+/*nav ul li:hover > ul, nav ul li a:focus + ul { */
+nav ul li:hover > ul { 
+	display: block;
+}
+
+nav ul {
+	list-style: none;
+	position: relative;
+	display: block;
+}
+
+nav ul:after {
+	content: ""; 
+	clear: both; 
+	display: block;
+}
+
+nav ul li { float: left; }
+
+/* make the menu item dark gray on hover */
+/*nav ul li:hover, nav ul li a:focus {*/
+nav ul li:hover { background: #4b545f; }
+
+/* make the menu text white on hover */
+/*nav ul li:hover a, nav ul li a:focus {*/
+nav ul li:hover a { color: #fff; }
+
+nav ul li a {
+	display: block; 
+	padding: .3em 2.6em;
+	color: black; 
+	text-decoration: none;
+}
+
+/* sub menu styling */
+nav ul ul {
+	background: #5f6975; 
+	padding: 0;
+	position: absolute; 
+	top: 100%;
+}
+
+nav ul ul li {
+	float: none; 
+	border-top: 1px solid #6b727c;
+	border-bottom: 1px solid #575f6a;
+	position: relative;
+}
+nav ul ul li a {
+	padding: .6em 1.8em;
+	color: #fff;
+}	
+	
+nav ul ul li a:hover {
+	background: #4b545f;
+}
+/* end nav bar styling */
+
+
+
+.top-content {
+	margin: .3em;
+}
+
+.headline, .tagline {
+	margin-bottom: .8em;
+	color: #07518A;
+}
+.headline {
+	font-size: 3.25em;
+	text-shadow: #a4a4a4 2px 1px 1px;
+}
+.tagline {
+	font-size: 2.1em;
+}
+.headline-text {
+	font-size: 1.25em;
+	margin-bottom: 1em;
+	padding: 0 .5em;
+}
+
+.headline-image {
+	width: 19em;
+	margin-left: .3em;
+	margin-bottom: .8em;
+
+	float: right;
+}
+
+.details {
+	clear: both;
+}
+
+.column {
+	width:33%;
+	float:left;
+	margin-bottom: 15px;
+}
+
+
+.column-contents h2 {
+	text-align: center;
+}
+
+.column-contents p {
+	margin: .6em;
+}
+
+.column-img {
+	width: 12.5em;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border: 3px solid #7aadcf;
+
+	-webkit-box-shadow: 3px 2px 2px #888888;
+	box-shadow: 3px 2px 2px #888888;
+}
+
+.learn-more {
+	float:right;
+
+	background-color: #07518A;
+	background: -webkit-linear-gradient(top, #3D7EA9 0%,#07518A 100%);
+	background: -moz-linear-gradient(top, #3D7EA9 0%,#07518A 100%);
+	background: -o-linear-gradient(top, #3D7EA9 0%,#07518A 100%);
+	background: -ms-linear-gradient(top, #3D7EA9 0%,#07518A 100%);
+	background: linear-gradient(top, #3D7EA9 0%,#07518A 100%);
+
+	-webkit-box-shadow: 0 0 9px rgba(0,0,0,0.15);
+	box-shadow: 0 0 9px rgba(0,0,0,0.15);
+
+	padding: .02em .4em;
+	margin: .1em .5em;
+	border-radius: 9px;
+
+	color: #fff;
+	text-decoration: none;
+}
+
+footer {
+	clear: both;
+	position: relative;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	padding: 0 .3em;
+	height: 70px;
+
+	background-color: #7aadcf;
+	background: -webkit-linear-gradient(top, #7aadcf 0%,#3D7EA9 100%);
+	background: -moz-linear-gradient(top, #7aadcf 0%,#3D7EA9 100%);
+	background: -o-linear-gradient(top, #7aadcf 0%,#3D7EA9 100%);
+	background: -ms-linear-gradient(top, #7aadcf 0%,#3D7EA9 100%);
+	background: linear-gradient(top, #7aadcf 0%,#3D7EA9 100%);
+
+}
+
+.footer-column {
+	width:33%;
+	float:left;
+}
+
+.footer-content {
+	/*margin: 12px 0 5px 0;*/
+	/*border: 1px solid blue;*/
+	/*background-color: gray;*/
+}
+
+.contact-footer {
+	font-size: 1em;
+	padding-top: .5em;	
+
+}
+
+.copyright {
+	font-size: .8em;
+	padding-top: .5em;	
+	text-align: right;
+}
+
+.certifications img {
+	width: 6em;
+	padding: .5em .8em;	
+}
+
+.centered {
+	width: 16em;
+	margin-left: auto;
+	margin-right: auto;
+}
